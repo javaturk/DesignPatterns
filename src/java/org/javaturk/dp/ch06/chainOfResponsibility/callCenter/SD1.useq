@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.4" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="org.javaturk.dp.ch06.chainOfResponsibility.callCenter.Test" 
+    project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch06/chainOfResponsibility/callCenter/Test.java" binary="false" 
+    label="test" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="74" y="0"/>    
+    <execution id="2">      
+      <position height="1027" width="0" x="0" y="191"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="964" width="0" x="0" y="233"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="285"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="157" width="0" x="0" y="337"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="330" width="0" x="0" y="525"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="290" width="0" x="0" y="886"/>    
+    </execution>  
+  </object>  
+  <object id="31" language="java" name="org.javaturk.dp.ch06.chainOfResponsibility.callCenter.StandardCustomer" 
+    project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch06/chainOfResponsibility/callCenter/StandardCustomer.java" 
+    binary="false" label="customer" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="20">      
+      <position height="21" width="0" x="0" y="618"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="org.javaturk.dp.ch06.chainOfResponsibility.callCenter.GoldCustomer" 
+    project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch06/chainOfResponsibility/callCenter/GoldCustomer.java" 
+    binary="false" label="customer1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="22">      
+      <position height="21" width="0" x="0" y="731"/>    
+    </execution>  
+  </object>  
+  <object id="33" language="java" name="org.javaturk.dp.ch06.chainOfResponsibility.callCenter.VipCustomer" 
+    project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch06/chainOfResponsibility/callCenter/VipCustomer.java" 
+    binary="false" label="customer2" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="24">      
+      <position height="21" width="0" x="0" y="813"/>    
+    </execution>  
+  </object>  
+  <object id="34" language="java" name="org.javaturk.dp.ch06.chainOfResponsibility.callCenter.VipCallTaker" 
+    project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch06/chainOfResponsibility/callCenter/VipCallTaker.java" 
+    binary="false" label="vipCT" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="14">      
+      <position height="21" width="0" x="0" y="368"/>    
+    </execution>  
+  </object>  
+  <object id="35" language="java" name="org.javaturk.dp.ch06.chainOfResponsibility.callCenter.GoldCallTaker" 
+    project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch06/chainOfResponsibility/callCenter/GoldCallTaker.java" 
+    binary="false" label="goldCT" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="16">      
+      <position height="21" width="0" x="0" y="410"/>    
+    </execution>  
+  </object>  
+  <object id="36" language="java" name="org.javaturk.dp.ch06.chainOfResponsibility.callCenter.StandardCallTaker" 
+    project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch06/chainOfResponsibility/callCenter/StandardCallTaker.java" 
+    binary="false" label="standardCT" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="18">      
+      <position height="21" width="0" x="0" y="452"/>    
+    </execution>  
+  </object>  
+  <object id="37" language="java" name="org.javaturk.dp.ch06.chainOfResponsibility.callCenter.CallTaker" 
+    project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch06/chainOfResponsibility/callCenter/CallTaker.java" binary="false" 
+    label="first" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="30">      
+      <position height="21" width="0" x="0" y="1134"/>    
+    </execution>    
+    <execution id="28">      
+      <position height="21" width="0" x="0" y="1041"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="948"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="38" interaction-operator="LOOP">    
+    <interaction-operand id="39" constraint="for: customers">      
+      <fragment refId="29"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="40" interaction-operator="LOOP">    
+    <interaction-operand id="41" constraint="for:i &lt; count">      
+      <fragment refId="42"/>    
+    </interaction-operand>    
+    <combined-fragment id="42" interaction-operator="ALT">      
+      <interaction-operand id="43" constraint="random &lt; 0.33">        
+        <fragment refId="19"/>      
+      </interaction-operand>      
+      <interaction-operand id="44" constraint="else">        
+        <fragment refId="45"/>      
+      </interaction-operand>      
+      <combined-fragment id="45" interaction-operator="ALT">        
+        <interaction-operand id="46" constraint="random &lt; 0.66">          
+          <fragment refId="21"/>        
+        </interaction-operand>        
+        <interaction-operand id="47" constraint="else">          
+          <fragment refId="23"/>        
+        </interaction-operand>      
+      </combined-fragment>    
+    </combined-fragment>  
+  </combined-fragment>  
+  <combined-fragment id="48" interaction-operator="LOOP">    
+    <interaction-operand id="49" constraint="for: customers">      
+      <fragment refId="27"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="50" interaction-operator="LOOP">    
+    <interaction-operand id="51" constraint="for: customers">      
+      <fragment refId="25"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="main(java.lang.String[]):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="Test()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="createCallTakers():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="createCustomers(int):void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="startTakingCalls():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="VipCallTaker(org.javaturk.dp.ch06.chainOfResponsibility.callCenter.CallTaker)" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="GoldCallTaker(org.javaturk.dp.ch06.chainOfResponsibility.callCenter.CallTaker)" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="StandardCallTaker(org.javaturk.dp.ch06.chainOfResponsibility.callCenter.CallTaker)" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="19" operation="StandardCustomer()" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="GoldCustomer()" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="VipCustomer()" asynchronous="false">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>  
+  <message id="25" operation="answer(org.javaturk.dp.ch06.chainOfResponsibility.callCenter.Customer):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" operation="answer(org.javaturk.dp.ch06.chainOfResponsibility.callCenter.Customer):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="28"/>  
+  </message>  
+  <message id="29" operation="answer(org.javaturk.dp.ch06.chainOfResponsibility.callCenter.Customer):void" 
+    asynchronous="false">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="30"/>  
+  </message>
+</sequence-diagram>
