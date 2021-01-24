@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.8" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="org.javaturk.dp.pattern.gof.structural.facade.computer.Client" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/structural/facade/computer/Client.java" binary="false" 
+    label="client" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="72" y="0"/>    
+    <execution id="2">      
+      <position height="692" width="0" x="0" y="244"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="577" width="0" x="0" y="286"/>    
+    </execution>    
+    <execution id="6">      
+      <position height="21" width="256" x="5" y="894"/>    
+    </execution>  
+  </object>  
+  <object id="11" language="java" name="org.javaturk.dp.pattern.gof.structural.facade.computer.Computer" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/structural/facade/computer/Computer.java" binary="false" 
+    label="computer" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="317"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="483" width="0" x="0" y="359"/>    
+    </execution>  
+  </object>  
+  <object id="34" language="java" name="org.javaturk.dp.pattern.gof.structural.facade.computer.CPU" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/structural/facade/computer/CPU.java" binary="false" 
+    label="cpu" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="380"/>    
+    </execution>  
+  </object>  
+  <object id="35" language="java" name="org.javaturk.dp.pattern.gof.structural.facade.computer.HardDrive" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/structural/facade/computer/HardDrive.java" binary="false" 
+    label="hd" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="422"/>    
+    </execution>  
+  </object>  
+  <object id="36" language="java" name="org.javaturk.dp.pattern.gof.structural.facade.computer.RAM" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/structural/facade/computer/RAM.java" binary="false" 
+    label="ram" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="464"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="506"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="548"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="590"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="632"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="674"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="716"/>    
+    </execution>    
+    <execution id="31">      
+      <position height="21" width="0" x="0" y="758"/>    
+    </execution>  
+  </object>  
+  <object id="37" language="java" name="org.javaturk.dp.pattern.gof.structural.facade.computer.Display" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/structural/facade/computer/Display.java" binary="false" 
+    label="display" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="33">      
+      <position height="21" width="0" x="0" y="800"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="main(java.lang.String[]):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="Computer()">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="start():void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="12" operation="start():void">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="start():void">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="loadOSKernelImage():boolean">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="fixIt():void">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="loadOSKernelImage():boolean">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="loadOS():boolean">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="fixIt():void">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="loadOS():boolean">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="loadDrivers():void">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="startServices():void">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>  
+  <message id="32" operation="start():void">    
+    <end type="SOURCE" refId="10"/>    
+    <end type="TARGET" refId="33"/>  
+  </message>
+</sequence-diagram>

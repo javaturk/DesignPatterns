@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.4" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="org.javaturk.dp.ch05.decorator.toast.pattern.Test" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch05/decorator/toast/pattern/Test.java" binary="false" label="test" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="95" y="0"/>    
+    <execution id="2">      
+      <position height="84" width="0" x="0" y="168"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="21" width="0" x="0" y="210"/>    
+    </execution>  
+  </object>  
+  <message id="3" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>
+</sequence-diagram>

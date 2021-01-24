@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.2.4" icons="true" automaticImage="PNG" generate-combined-fragments="true">  
+  <object id="1" language="java" name="org.javaturk.dp.ch05.facade.computer.Client" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch05/facade/computer/Client.java" binary="false" label="client" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="113" y="0"/>    
+    <execution id="2">      
+      <position height="742" width="0" x="0" y="136"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="679" width="0" x="0" y="178"/>    
+    </execution>  
+  </object>  
+  <object id="9" language="java" name="org.javaturk.dp.ch05.facade.computer.Computer" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch05/facade/computer/Computer.java" binary="false" label="computer" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="302" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="209"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="585" width="0" x="0" y="251"/>    
+    </execution>  
+  </object>  
+  <object id="32" language="java" name="org.javaturk.dp.ch05.facade.computer.CPU" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch05/facade/computer/CPU.java" binary="false" label="cpu" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="491" y="0"/>    
+    <execution id="11">      
+      <position height="21" width="0" x="0" y="272"/>    
+    </execution>  
+  </object>  
+  <object id="33" language="java" name="org.javaturk.dp.ch05.facade.computer.HardDrive" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch05/facade/computer/HardDrive.java" binary="false" label="hd" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="13">      
+      <position height="21" width="0" x="0" y="314"/>    
+    </execution>  
+  </object>  
+  <object id="34" language="java" name="org.javaturk.dp.ch05.facade.computer.RAM" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch05/facade/computer/RAM.java" binary="false" label="ram" 
+    type="class" autoSize="true">    
+    <position height="-1" width="-1" x="718" y="0"/>    
+    <execution id="15">      
+      <position height="21" width="0" x="0" y="356"/>    
+    </execution>    
+    <execution id="17">      
+      <position height="21" width="0" x="0" y="439"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="481"/>    
+    </execution>    
+    <execution id="21">      
+      <position height="21" width="0" x="0" y="533"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="616"/>    
+    </execution>    
+    <execution id="25">      
+      <position height="21" width="0" x="0" y="658"/>    
+    </execution>    
+    <execution id="27">      
+      <position height="21" width="0" x="0" y="710"/>    
+    </execution>    
+    <execution id="29">      
+      <position height="21" width="0" x="0" y="752"/>    
+    </execution>  
+  </object>  
+  <object id="35" language="java" name="org.javaturk.dp.ch05.facade.computer.Display" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch05/facade/computer/Display.java" binary="false" label="display" 
+    type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="31">      
+      <position height="21" width="0" x="0" y="794"/>    
+    </execution>  
+  </object>  
+  <combined-fragment id="36" interaction-operator="LOOP">    
+    <interaction-operand id="37" constraint="while: !kernelLoaded">      
+      <fragment refId="18"/>      
+      <fragment refId="16"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <combined-fragment id="38" interaction-operator="LOOP">    
+    <interaction-operand id="39" constraint="while: !osLoaded">      
+      <fragment refId="24"/>      
+      <fragment refId="22"/>    
+    </interaction-operand>  
+  </combined-fragment>  
+  <message id="3" operation="main(java.lang.String[]):void" asynchronous="false">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="Computer()" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="start():void" asynchronous="false">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="10" operation="start():void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="11"/>  
+  </message>  
+  <message id="12" operation="start():void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="13"/>  
+  </message>  
+  <message id="14" operation="loadOSKernelImage():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="16" operation="fixIt():void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="17"/>  
+  </message>  
+  <message id="18" operation="loadOSKernelImage():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>  
+  <message id="20" operation="loadOS():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="21"/>  
+  </message>  
+  <message id="22" operation="fixIt():void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="loadOS():boolean" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="25"/>  
+  </message>  
+  <message id="26" operation="loadDrivers():void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="27"/>  
+  </message>  
+  <message id="28" operation="startServices():void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="29"/>  
+  </message>  
+  <message id="30" operation="start():void" asynchronous="false">    
+    <end type="SOURCE" refId="8"/>    
+    <end type="TARGET" refId="31"/>  
+  </message>
+</sequence-diagram>
