@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.8" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="org.javaturk.dp.pattern.gof.behavioral.visitor.factory.Test" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/visitor/factory/Test.java" binary="false" 
+    label="test" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="116" y="0"/>    
+    <execution id="2">      
+      <position height="534" width="0" x="0" y="109"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="471" width="0" x="0" y="151"/>    
+    </execution>  
+  </object>  
+  <object id="13" language="java" name="org.javaturk.dp.pattern.gof.behavioral.visitor.factory.Factory" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/visitor/factory/Factory.java" binary="false" 
+    label="factory" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="182"/>    
+    </execution>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="224"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="293" width="0" x="0" y="308"/>    
+    </execution>  
+  </object>  
+  <object id="16" language="java" name="org.javaturk.dp.pattern.gof.behavioral.visitor.factory.Employee" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/visitor/factory/Employee.java" binary="false" 
+    label="employee" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="15">      
+      <position height="251" width="0" x="0" y="329"/>    
+    </execution>    
+    <execution id="19">      
+      <position height="21" width="0" x="0" y="517"/>    
+    </execution>    
+    <execution id="20">      
+      <position height="21" width="0" x="0" y="423"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="org.javaturk.dp.pattern.gof.behavioral.visitor.factory.HealthVisitor" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/visitor/factory/HealthVisitor.java" binary="false" 
+    label="hv" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="21" width="0" x="0" y="266"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="209" width="0" x="0" y="350"/>    
+    </execution>    
+    <execution id="23">      
+      <position height="21" width="0" x="0" y="392"/>    
+    </execution>    
+    <execution id="26">      
+      <position height="21" width="0" x="0" y="486"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="main(java.lang.String[]):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="Factory(int)">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="populateFactory():void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="HealthVisitor()">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="setVisitor(org.javaturk.dp.pattern.gof.behavioral.visitor.factory.HealthVisitor):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="14" operation="accept(org.javaturk.dp.pattern.gof.behavioral.visitor.factory.HealthVisitor):void">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="15"/>  
+  </message>  
+  <message id="17" operation="visit(org.javaturk.dp.pattern.gof.behavioral.visitor.factory.Employee):void">    
+    <end type="SOURCE" refId="15"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>  
+  <message id="22" 
+    operation="checkPsychologicalStatus(org.javaturk.dp.pattern.gof.behavioral.visitor.factory.Manager):void">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="23"/>  
+  </message>  
+  <message id="24" operation="getYear():int">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="25" operation="checkHealthStatus(org.javaturk.dp.pattern.gof.behavioral.visitor.factory.Employee):void">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="26"/>  
+  </message>  
+  <message id="27" operation="getYear():int">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="19"/>  
+  </message>
+</sequence-diagram>

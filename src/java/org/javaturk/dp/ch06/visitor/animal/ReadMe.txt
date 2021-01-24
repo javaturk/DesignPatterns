@@ -1,0 +1,1 @@
+https://dzone.com/articles/visitor-design-pattern
