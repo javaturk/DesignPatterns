@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.8" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="org.javaturk.dp.pattern.gof.behavioral.strategy.sorting.pattern.Test" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/strategy/sorting/pattern/Test.java" binary="false" 
+    label="test" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="141" y="0"/>    
+    <execution id="2">      
+      <position height="472" width="0" x="0" y="205"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="409" width="0" x="0" y="247"/>    
+    </execution>  
+  </object>  
+  <object id="17" language="java" name="org.javaturk.dp.pattern.gof.behavioral.strategy.sorting.ArrayCreator" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/strategy/sorting/ArrayCreator.java" binary="false" 
+    label="&lt;static&gt;" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="278"/>    
+    </execution>    
+    <execution id="10">      
+      <position height="21" width="0" x="0" y="362"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="21" width="0" x="0" y="446"/>    
+    </execution>  
+  </object>  
+  <object id="18" language="java" name="org.javaturk.dp.pattern.gof.behavioral.strategy.sorting.pattern.SortingContext" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/strategy/sorting/pattern/SortingContext.java" 
+    binary="false" label="context" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="320"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="21" width="0" x="0" y="404"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="147" width="0" x="0" y="488"/>    
+    </execution>  
+  </object>  
+  <object id="25" language="java" name="org.javaturk.dp.pattern.gof.behavioral.strategy.sorting.pattern.Sorter" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/strategy/sorting/pattern/Sorter.java" 
+    binary="false" label="bubbleSorter" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="20">      
+      <position height="21" width="0" x="0" y="509"/>    
+    </execution>  
+  </object>  
+  <object id="26" language="java" name="org.javaturk.dp.pattern.gof.behavioral.strategy.sorting.pattern.Sorter" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/strategy/sorting/pattern/Sorter.java" 
+    binary="false" label="quickSorter" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="22">      
+      <position height="21" width="0" x="0" y="551"/>    
+    </execution>  
+  </object>  
+  <object id="27" language="java" name="org.javaturk.dp.pattern.gof.behavioral.strategy.sorting.pattern.Sorter" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/strategy/sorting/pattern/Sorter.java" 
+    binary="false" label="javaSorter" type="interface" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="24">      
+      <position height="21" width="0" x="0" y="593"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="main(java.lang.String[]):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="createArray(int):double[]">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="sortDouble(double[]):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="createArray(int):double[]">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="sortDouble(double[]):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="createArray(int):double[]">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="sortDouble(double[]):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="19" operation="sort(double[]):void">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="20"/>  
+  </message>  
+  <message id="21" operation="sort(double[]):void">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="22"/>  
+  </message>  
+  <message id="23" operation="sort(double[]):void">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="24"/>  
+  </message>
+</sequence-diagram>
