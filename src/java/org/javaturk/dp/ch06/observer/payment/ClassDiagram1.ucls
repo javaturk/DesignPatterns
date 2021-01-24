@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.1.8" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true">  
+  <class id="1" language="java" name="org.javaturk.dp.pattern.gof.behavioral.observer.payment.Accountant" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/observer/payment/Accountant.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="812" y="380"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="org.javaturk.dp.pattern.gof.behavioral.observer.payment.Boss" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/observer/payment/Boss.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="1054" y="379"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="org.javaturk.dp.pattern.gof.behavioral.observer.payment.Invoice" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/observer/payment/Invoice.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="449" y="482"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="java.util.Observable" project="Design Patterns" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="451" y="190"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="5" language="java" name="java.util.Observer" project="Design Patterns" 
+    file="/Library/Java/JavaVirtualMachines/jdk1.7.0_75.jdk/Contents/Home/jre/lib/rt.jar" binary="true" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="931" y="190"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="false" protected="true" private="true" static="true"/>      
+      <operations public="true" package="false" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <dependency id="6">    
+    <end type="SOURCE" refId="5"/>    
+    <end type="TARGET" refId="4"/>  
+  </dependency>  
+  <generalization id="7">    
+    <end type="SOURCE" refId="3"/>    
+    <end type="TARGET" refId="4"/>  
+  </generalization>  
+  <realization id="8">    
+    <end type="SOURCE" refId="1"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <realization id="9">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="5"/>  
+  </realization>  
+  <classifier-display autosize="true" stereotype="false" package="false" initial-value="true" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="true" package="false" protected="true" private="true" static="true"/>    
+    <operations public="true" package="false" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

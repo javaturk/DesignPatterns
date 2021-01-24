@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sequence-diagram version="1.1.8" icons="true" automaticImage="PNG">  
+  <object id="1" language="java" name="org.javaturk.dp.pattern.gof.behavioral.observer.payment.Test" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/observer/payment/Test.java" binary="false" 
+    label="test" type="class" autoSize="true">    
+    <position height="-1" width="-1" x="135" y="0"/>    
+    <execution id="2">      
+      <position height="388" width="0" x="0" y="131"/>    
+    </execution>    
+    <execution id="4">      
+      <position height="325" width="0" x="0" y="173"/>    
+    </execution>  
+  </object>  
+  <object id="19" language="java" name="org.javaturk.dp.pattern.gof.behavioral.observer.payment.Invoice" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/observer/payment/Invoice.java" binary="false" 
+    label="invoice1" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="6">      
+      <position height="21" width="0" x="0" y="204"/>    
+    </execution>    
+    <execution id="12">      
+      <position height="21" width="0" x="0" y="330"/>    
+    </execution>    
+    <execution id="14">      
+      <position height="21" width="0" x="0" y="372"/>    
+    </execution>    
+    <execution id="16">      
+      <position height="21" width="0" x="0" y="414"/>    
+    </execution>    
+    <execution id="18">      
+      <position height="21" width="0" x="0" y="456"/>    
+    </execution>  
+  </object>  
+  <object id="20" language="java" name="org.javaturk.dp.pattern.gof.behavioral.observer.payment.Boss" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/observer/payment/Boss.java" binary="false" 
+    label="boss" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="8">      
+      <position height="21" width="0" x="0" y="246"/>    
+    </execution>  
+  </object>  
+  <object id="21" language="java" name="org.javaturk.dp.pattern.gof.behavioral.observer.payment.Accountant" 
+    project="Design Patterns" 
+    file="/Design Patterns/src/org/javaturk/dp/pattern/gof/behavioral/observer/payment/Accountant.java" binary="false" 
+    label="accountant" type="class" autoSize="true">    
+    <position height="0" width="0" x="0" y="0"/>    
+    <execution id="10">      
+      <position height="21" width="0" x="0" y="288"/>    
+    </execution>  
+  </object>  
+  <message id="3" operation="main(java.lang.String[]):void">    
+    <end type="SOURCE" refId="2"/>    
+    <end type="TARGET" refId="4"/>  
+  </message>  
+  <message id="5" operation="Invoice(double)">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="6"/>  
+  </message>  
+  <message id="7" operation="Boss()">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="8"/>  
+  </message>  
+  <message id="9" operation="Accountant()">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="10"/>  
+  </message>  
+  <message id="11" operation="addObserver(java.util.Observer):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="12"/>  
+  </message>  
+  <message id="13" operation="addObserver(java.util.Observer):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="14"/>  
+  </message>  
+  <message id="15" operation="payBalance(double):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="16"/>  
+  </message>  
+  <message id="17" operation="payBalance(double):void">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="18"/>  
+  </message>
+</sequence-diagram>
