@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="false" generalizations="true" 
+  realizations="true" associations="true" dependencies="false" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="org.javaturk.dp.ch03.isp.paper.collection.Test" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch03/isp/paper/collection/Test.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="65" width="124" x="109" y="134"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <interface id="2" language="java" name="java.util.Collection" project="Design Patterns 2.0" 
+    file="/Library/Java/JavaVirtualMachines/jdk-11.0.7.jdk/Contents/Home/lib/jrt-fs.jar" binary="true" 
+    corner="BOTTOM_RIGHT">    
+    <position height="389" width="244" x="288" y="15"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <interface id="3" language="java" name="org.javaturk.dp.ch03.isp.paper.collection.ICollection" 
+    project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch03/isp/paper/collection/ICollection.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="698" y="112"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </interface>  
+  <classifier-display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+    sort-features="false" accessors="true" visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false" static="false"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>

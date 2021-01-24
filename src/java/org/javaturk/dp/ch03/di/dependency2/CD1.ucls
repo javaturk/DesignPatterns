@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<class-diagram version="1.2.4" icons="true" automaticImage="PNG" always-add-relationships="true" generalizations="true" 
+  realizations="true" associations="true" dependencies="true" nesting-relationships="true" router="FAN">  
+  <class id="1" language="java" name="org.javaturk.dp.ch03.di.dependency2.D" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch03/di/dependency2/D.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="372" y="240"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="true" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="2" language="java" name="org.javaturk.dp.ch03.di.dependency2.C" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch03/di/dependency2/C.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="372" y="157"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="true" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="3" language="java" name="org.javaturk.dp.ch03.di.dependency2.B" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch03/di/dependency2/B.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="372" y="74"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="true" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="4" language="java" name="org.javaturk.dp.ch03.di.dependency2.A" project="Design Patterns 2.0" 
+    file="/Design Patterns 2.0/src/org/javaturk/dp/ch03/di/dependency2/A.java" binary="false" corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="191" y="157"/>    
+    <display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+      sort-features="true" accessors="true" visibility="true">      
+      <attributes public="false" package="false" protected="false" private="false" static="false"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <dependency id="5">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="2"/>  
+  </dependency>  
+  <dependency id="6">    
+    <end type="SOURCE" refId="4"/>    
+    <end type="TARGET" refId="1"/>  
+  </dependency>  
+  <association id="7">    
+    <end type="SOURCE" refId="4" navigable="false" variant="ASSOCIATION">      
+      <attribute id="8" name="b"/>      
+      <multiplicity id="9" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true" variant="ASSOCIATION"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <classifier-display autosize="true" stereotype="false" package="false" initial-value="false" signature="true" 
+    sort-features="true" accessors="true" visibility="true">    
+    <attributes public="false" package="false" protected="false" private="false" static="false"/>    
+    <operations public="true" package="true" protected="true" private="true" static="true"/>  
+  </classifier-display>  
+  <association-display labels="true" multiplicity="true"/>
+</class-diagram>
