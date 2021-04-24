@@ -1,1 +1,0 @@
-{"version":3,"file":"client.js","sourceRoot":"","sources":["../../../../../../ts/dp/creational-patterns/abstract-factory/gui/sol1/client.ts"],"names":[],"mappings":";;;AAGA,MAAa,MAAM;IACjB,YAAY,OAAmB;QAC7B,MAAM,SAAS,GAAc,OAAO,CAAC,MAAM,EAAE,CAAC;QAC9C,SAAS,CAAC,KAAK,EAAE,CAAC;IACpB,CAAC;CACF;AALD,wBAKC"}
