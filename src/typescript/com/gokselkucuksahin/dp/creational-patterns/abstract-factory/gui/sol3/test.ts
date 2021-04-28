@@ -4,11 +4,11 @@ import {WinFactory} from "./win-factory";
 import {OSXFactory} from "./osx-factory";
 
 export class Test {
-  public static main() {
+  static main() {
     new Client(this.createOsSpecificFactory());
   }
 
-  public static createOsSpecificFactory(): GUIFactory {
+  static createOsSpecificFactory(): GUIFactory {
     const sys = this.readFromConfigFile("OS_TYPE");
     if (sys) {
       return new WinFactory();

@@ -12,11 +12,11 @@ export class Singleton {
     Singleton.count++;
   }
 
-  public say(): void {
+  say(): void {
     console.log("Singleton: ", Singleton.count);
   }
 
-  public static getInstance(): Singleton {
+  static getInstance(): Singleton {
     return Singleton.instance;
   }
 }

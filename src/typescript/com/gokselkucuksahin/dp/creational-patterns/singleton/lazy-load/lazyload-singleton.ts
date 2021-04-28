@@ -9,14 +9,14 @@ export class LazyLoadSingleton {
     LazyLoadSingleton.instance = new LazyLoadSingleton();
   }
 
-  public static getInstance() {
+  static getInstance() {
     if (!LazyLoadSingleton.instance) {
       LazyLoadSingleton.createInstance();
     }
     return LazyLoadSingleton.instance;
   }
 
-  public say(): void {
+  say(): void {
     console.log("Lazy Singleton: ", LazyLoadSingleton.count);
   }
 

@@ -5,9 +5,9 @@ export class Employee {
   protected department: string;
   protected salary: number;
 
-  public static readonly BASE_SALARY: number = 500;
+  static readonly BASE_SALARY: number = 500;
 
-  public constructor(id: number, name: string, year: number, department: string) {
+  constructor(id: number, name: string, year: number, department: string) {
     this.id = id;
     this.name = name;
     this.year = year;
@@ -15,16 +15,16 @@ export class Employee {
     this.calculateSalary();
   }
 
-  public work(): void {
+  work(): void {
     console.log("Employee is working!");
   }
 
-  public calculateSalary(): number {
+  calculateSalary(): number {
     this.salary = this.year * Employee.BASE_SALARY;
     return this.salary;
   }
 
-  public printInfo(): void {
+  printInfo(): void {
     console.log(`
 Employee Info
 Id: ${this.id}
@@ -33,27 +33,27 @@ Year: ${this.year}
 Department: ${this.department}`);
   }
 
-  public getId(): number {
+  getId(): number {
     return this.id;
   }
 
-  public getName(): string {
+  getName(): string {
     return this.name;
   }
 
-  public getYear(): number {
+  getYear(): number {
     return this.year;
   }
 
-  public getDepartment(): string {
+  getDepartment(): string {
     return this.department;
   }
 
-  public getSalary(): number {
+  getSalary(): number {
     return this.salary;
   }
 
-  public toString(): string {
+  toString(): string {
     return `Employee [id=${this.id}, name=${this.name}, year=${this.year}, department=${this.department}, salary=${this.salary}]`;
   }
 }

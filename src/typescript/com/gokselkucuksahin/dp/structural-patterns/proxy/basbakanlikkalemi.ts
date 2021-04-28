@@ -8,7 +8,7 @@ export class BasbakanlikKalemi {
     this.basbakan = new Vekilbasbakan(basbakan);
   }
 
-  public beniBasbakanaBagla(): Basbakan {
+  beniBasbakanaBagla(): Basbakan {
     console.log("Basbakanlik Kalemi: Sizi basbakana bağlıyorum...");
     return this.basbakan;
   }
