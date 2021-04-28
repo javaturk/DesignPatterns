@@ -13,7 +13,7 @@ export class Test {
     console.log(normalAccount.openToPayment);
     console.log(normalAccount.openToWithdraw);
     console.log(normalAccount.openToTransfer);
-    console.log("");
+    console.log("\n");
 
     // Negative account
     const negativeAccount: Account = factory.create(new Customer("Namik"), 500);
@@ -22,7 +22,7 @@ export class Test {
     console.log(negativeAccount.openToWithdraw);
     console.log(negativeAccount.openToPayment);
     console.log(negativeAccount.openToTransfer);
-    console.log("");
+    console.log("\n");
 
     // Frozen account
     const frozenAccount: Account = factory.create(new Customer("Zehra"), -5000);

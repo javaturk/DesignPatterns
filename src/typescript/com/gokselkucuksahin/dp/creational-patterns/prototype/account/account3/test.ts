@@ -1,7 +1,6 @@
 import {Factory} from "./factory";
 import {AccountFactory} from "./account-factory";
 import {Customer} from "../domain/customer";
-import {Account} from "../domain/account";
 
 export class Test {
 
@@ -13,14 +12,14 @@ export class Test {
     console.log(normalDefaultAccount.openToWithdraw);
     console.log(normalDefaultAccount.openToPayment);
     console.log(normalDefaultAccount.openToTransfer);
-    console.log("");
+    console.log("\n");
 
     // Negative account
     const negativeDefaultAccount = factory.createNegativeAccount(new Customer("Mustafa"), -750);
     console.log(negativeDefaultAccount.openToWithdraw);
     console.log(negativeDefaultAccount.openToPayment);
     console.log(negativeDefaultAccount.openToTransfer);
-    console.log("");
+    console.log("\n");
 
     // Frozen default account
     const frozenDefaultAccount = factory.createFrozenAccount(new Customer("Sukran"), -1000);

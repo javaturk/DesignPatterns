@@ -1,7 +1,6 @@
 import {Factory} from "../account3/factory";
 import {AccountFactory} from "./account-factory";
 import {Customer} from "../domain/customer";
-import {Account} from "../domain/account";
 
 export class Test {
 
