@@ -5,7 +5,7 @@ import {GraphiscCard} from "../domain/graphisc-card";
 import {Display} from "../domain/display";
 import {Keyboard} from "../domain/keyboard";
 import {Mouse} from "../domain/mouse";
-import {ComputerBuilderInterface} from "./computer-builder-interface";
+import {LazyComputerBuilderInterface} from "./lazy-computer-builder-interface";
 
 export class Computer {
   private _name: string;
@@ -95,59 +95,72 @@ export class Computer {
     return new Computer.ComputerBuilder(name);
   }
 
-  private static ComputerBuilder = class implements ComputerBuilderInterface {
+  private static ComputerBuilder = class implements LazyComputerBuilderInterface {
 
     private name: string;
-    private cpu: CPU;
-    private ram: RAM;
-    private hdd: HDD;
-    private graphicCard: GraphiscCard;
-    private display: Display;
-    private keyboard: Keyboard;
-    private mouse: Mouse;
+
+    private hasCPU: boolean;
+    private hasRAM: boolean;
+    private hasHDD: boolean;
+    private hasGC: boolean;
+    private hasDisplay: boolean;
+    private hasKeyboard: boolean;
+    private hasMouse: boolean;
+
+    private computer: Computer;
 
     constructor(name: string) {
       this.name = name;
     }
 
+    buildRAM(): LazyComputerBuilderInterface {
+      this.hasRAM = true
+      return this;
+    }
+
+    buildCPU(): LazyComputerBuilderInterface {
+      this.hasCPU = true;
+      return this;
+    }
+
+    buildDisplay(): LazyComputerBuilderInterface {
+      this.hasDisplay = true;
+      return this;
+    }
+
+    buildGraphicCard(): LazyComputerBuilderInterface {
+      this.hasGC = true;
+      return this;
+    }
+
+    buildHDD(): LazyComputerBuilderInterface {
+      this.hasHDD = true;
+      return this;
+    }
+
+    buildKeyboard(): LazyComputerBuilderInterface {
+      this.hasKeyboard = true;
+      return this;
+    }
+
+    buildMouse(): LazyComputerBuilderInterface {
+      this.hasMouse = true;
+      return this;
+    }
+
     build(): Computer {
-      const computer = Computer.computer_4(this.name, this.cpu, this.ram, this.hdd, this.graphicCard, this.display, this.keyboard, this.mouse);
-      return computer;
-    }
+      this.computer = new Computer();
+      this.computer._name = this.name;
 
-    buildCPU(): ComputerBuilderInterface {
-      this.cpu = new CPU();
-      return this;
-    }
+      !!this.hasRAM && (this.computer._ram = new RAM());
+      !!this.hasCPU && (this.computer._cpu = new CPU());
+      !!this.hasHDD && (this.computer._hdd = new HDD());
+      !!this.hasDisplay && (this.computer._display = new Display());
+      !!this.hasGC && (this.computer._graphicCard = new GraphiscCard());
+      !!this.hasKeyboard && (this.computer._keyboard = new Keyboard());
+      !!this.hasMouse && (this.computer._mouse = new Mouse());
 
-    buildDisplay(): ComputerBuilderInterface {
-      this.display = new Display();
-      return this;
-    }
-
-    buildGraphicCard(): ComputerBuilderInterface {
-      this.graphicCard = new GraphiscCard();
-      return this;
-    }
-
-    buildHDD(): ComputerBuilderInterface {
-      this.hdd = new HDD();
-      return this;
-    }
-
-    buildKeyboard(): ComputerBuilderInterface {
-      this.keyboard = new Keyboard();
-      return this;
-    }
-
-    buildMouse(): ComputerBuilderInterface {
-      this.mouse = new Mouse();
-      return this;
-    }
-
-    buildRAM(): ComputerBuilderInterface {
-      this.ram = new RAM();
-      return this;
+      return this.computer;
     }
   }
 }
